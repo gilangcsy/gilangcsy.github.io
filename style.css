@@ -1,0 +1,607 @@
+* {
+    font-family: metropolis;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Viga',
+        sans-serif;
+    color: #FFBA08 !important;
+}
+
+.nav-link {
+    font-family: 'Metropolis',
+        sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* iPhone 6/7/8 */
+@media (min-height: 570px) and (max-height: 670px) {
+
+
+    /* About Me */
+    .about .container {
+        height: auto;
+    }
+
+    .skills .image {
+        margin-top: 50px;
+    }
+
+    .projects .card {
+        margin-top: 30px;
+    }
+
+    .contact .image {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 7765px) {
+    .contact .image {
+        margin-top: 0px;
+    }
+}
+
+
+/* iPhone 6/7/8 Plus */
+@media (min-height: 670px) and (max-height: 740px) {
+
+    /* Projects */
+    .projects .container {
+        margin-top: 40px;
+    }
+
+    .projects .card {
+        margin-top: 30px;
+    }
+
+    .skills .image {
+        margin-top: 50px;
+    }
+
+    .contact .image {
+        margin-top: 30px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* Projects */
+    .projects .container {
+        background-color: green;
+    }
+
+    .projects .card {
+        margin-top: 30px;
+    }
+
+    .skills .image {
+        margin-top: 30px;
+    }
+
+    .jumbotron {
+        background: url('img/jumbo-opa.JPG');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .jumbotron .image-svg {
+        display: none;
+    }
+
+    .jumbotron .greetings {
+        color: #131313;
+        font-size: 36pt;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* About Me */
+    .about .container {
+        background-color: white;
+        height: auto;
+        padding: 50px;
+    }
+
+    .about {
+        font-size: 14pt;
+        color: #131313;
+        text-align: justify;
+    }
+
+    .about h4 {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #131313;
+    }
+
+    .about h4::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(50% - 60px);
+    }
+
+    .about h4::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: #FFBA08;
+        bottom: 0;
+        left: calc(50% - 20px);
+    }
+
+    .about .title {
+        font-weight: bold;
+    }
+
+    .about .image {
+        display: none;
+    }
+
+    .contact .image {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .jumbotron {
+        height: 550px;
+        background: url('img/jumbo-opa.JPG');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .jumbotron .image-svg {
+        display: block;
+    }
+
+    .jumbotron .greetings {
+        color: #131313;
+        font-weight: bold;
+        font-size: 48pt;
+        text-align: center;
+        height: 100px;
+    }
+
+    .jumbotron .introduce {
+        color: #131313;
+        text-align: center;
+        font-size: 14pt;
+    }
+
+    .contact .image {
+        margin-top: 0px;
+    }
+
+}
+
+
+
+
+
+.footer {
+    height: 150px;
+    background-color: #131313;
+    color: white;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    height: 550px;
+    background: url('img/jumbo-opa.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron .greetings {
+    color: #131313;
+    font-weight: bold;
+    font-size: 36pt;
+    text-align: center;
+    height: auto;
+}
+
+.jumbotron .introduce {
+    color: #131313;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.jumbotron .image-svg {
+    display: none;
+}
+
+.jumbotron .introduce {
+    color: #131313;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.jumbotron .button {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* About Me */
+.about .container {
+    background-color: white;
+    height: auto;
+    padding: 50px;
+}
+
+.about {
+    font-size: 14pt;
+    color: #131313;
+    text-align: justify;
+}
+
+.about h4 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #131313;
+}
+
+.about h4::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.about h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFBA08;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.about .title {
+    font-weight: bold;
+}
+
+.about .image {
+    display: none;
+}
+
+
+/* Projects */
+.projects .container {
+    background-color: white;
+    height: auto;
+    padding: 50px;
+}
+
+.projects {
+    font-size: 14pt;
+    color: #131313;
+    text-align: justify;
+}
+
+.projects h4 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #131313;
+}
+
+.projects h4::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.projects h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFBA08;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+/* Skills */
+.skills .container {
+    background-color: white;
+    height: auto;
+    padding: 50px;
+}
+
+.skills {
+    font-size: 14pt;
+    color: #131313;
+    text-align: justify;
+}
+
+.skills h4 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #131313;
+}
+
+.skills h4::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.skills h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FFBA08;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.skills img {
+    height: 80px;
+    transition: 0.125s;
+}
+
+.php img {
+    height: 50px;
+}
+
+.skills img:hover {
+    transform: scale(1.5);
+    transition: 0.125s;
+}
+
+.skills .image {
+    margin-top: 50px;
+}
+
+
+
+/* Contact */
+.contact .container-fluid {
+    background-color: #FFBA08;
+    height: auto;
+    padding: 50px;
+}
+
+.contact {
+    font-size: 14pt;
+    color: #131313;
+    text-align: justify;
+}
+
+.contact h4 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #131313;
+}
+
+.contact img {
+    height: 50px;
+    transition: 0.125s;
+}
+
+.contact img:hover {
+    transform: scale(1.5);
+    transition: 0.125s;
+}
+
+
+
+
+
+
+
+
+/* Desktop */
+@media(min-width:992px) {
+    .nav-link {
+        margin-right: 50px;
+        color: #131313 !important;
+        transition: 0.125s;
+    }
+
+    .nav-link:hover {
+        color: #FFBA08 !important;
+        display: block;
+        border-bottom: 2.8px solid #FFBA08;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+    .nav-active {
+        color: #FFBA08 !important;
+        content: '';
+        display: block;
+        border-bottom: 2.8px solid #FFBA08;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        height: 550px;
+        background: unset;
+    }
+
+    .jumbotron .image-svg {
+        display: block;
+    }
+
+    .jumbotron .greetings {
+        color: #131313;
+        font-weight: bold;
+        font-size: 56pt;
+        text-align: left;
+        height: 100px;
+    }
+
+    .jumbotron .introduce {
+        color: #131313;
+        text-align: left;
+        font-size: 14pt;
+    }
+
+    .jumbotron .button {
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    .jumbo-desktop {
+        display: unset;
+    }
+
+    .jumbo-mobile {
+        visibility: hidden;
+    }
+
+
+
+    .image-svg {
+        background: url(img/jumbo.png);
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+    }
+
+    /* About Me */
+    .about .container {
+        background-color: white;
+        height: auto;
+        padding: 50px;
+    }
+
+    .about .image {
+        background: url(img/about.svg);
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 450px;
+        display: block;
+    }
+
+
+    .projects .card {
+        margin-top: 30px;
+    }
+
+
+
+
+    .contact .image {
+        margin-top: 0px;
+    }
+}
+
+@media(min-width:1400px) {
+    .jumbotron {
+        height: 1000px;
+        background: unset;
+    }
+
+    .jumbotron .image-svg {
+        display: block;
+    }
+
+    .jumbotron .greetings {
+        color: #131313;
+        font-weight: bold;
+        font-size: 56pt;
+        text-align: left;
+        height: 100px;
+    }
+
+    .jumbotron .introduce {
+        color: #131313;
+        text-align: left;
+        font-size: 14pt;
+    }
+
+    .image-svg {
+        background: url(img/jumbo.png);
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 600px;
+    }
+
+    .nav-link {
+        margin-right: 50px;
+        color: #131313 !important;
+        transition: 0.125s;
+    }
+
+    .nav-link:hover {
+        color: #FFBA08 !important;
+        display: block;
+        border-bottom: 2.8px solid #FFBA08;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+    .nav-active {
+        color: #FFBA08 !important;
+        content: '';
+        display: block;
+        border-bottom: 2.8px solid #FFBA08;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
