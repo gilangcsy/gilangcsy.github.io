@@ -1,6 +1,4 @@
-
-
-    $('.page-scroll').on('click', function () {
+$('.page-scroll').on('click', function () {
 
         var href = $(this).attr('href');
 
@@ -54,11 +52,3 @@ $(window).on('scroll', function () {
 	});
 });
 
-// Preloader
-$(window).on('load', function () {
-	if ($('#preloader').length) {
-		$('#preloader').delay(100).fadeOut('slow', function () {
-			$(this).remove();
-		});
-	}
-});
