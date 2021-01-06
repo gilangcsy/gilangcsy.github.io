@@ -394,13 +394,18 @@ body {
 }
 
 .skills img {
-    height: 80px;
+    height: 50px;
     transition: 0.125s;
 }
 
 .php img {
-    height: 50px;
+    height: 30px;
 }
+
+.mysql img {
+    height: 40px;
+}
+
 
 .skills img:hover {
     transform: scale(1.5);
