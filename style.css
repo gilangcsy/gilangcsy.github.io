@@ -527,7 +527,7 @@ body {
 
 
     .image-svg {
-        background: url(img/jumbo.png);
+        background: url(img/jumbo.webp);
         background-size: 450px;
         background-repeat: no-repeat;
         background-position: center;
@@ -588,7 +588,7 @@ body {
     }
 
     .image-svg {
-        background: url(img/jumbo.png);
+        background: url(img/jumbo.webp);
         background-size: 600px;
         background-repeat: no-repeat;
         background-position: center;
